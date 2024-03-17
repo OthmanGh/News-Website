@@ -39,6 +39,9 @@ const createNew = () => {
     .catch((error) => {
       console.error('Error creating news:', error);
     });
+
+  title.value = '';
+  content.value = '';
 };
 
 const report = ({ title, content, published_date }) => `
