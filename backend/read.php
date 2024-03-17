@@ -1,6 +1,11 @@
 <?php
 include("connection.php");
 
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Credentials: true");
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
+header("Access-Control-Allow-Headers: Content-Type");
+
 $query = $mysqli->prepare("SELECT * from news");
 
 $query->execute();

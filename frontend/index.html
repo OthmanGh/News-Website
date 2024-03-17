@@ -4,20 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Website</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./scripts/index.js"></script>
   </head>
 
   <body>
     <h1>DailyDigest: Your Source for Timely News</h1>
+
+    <form id="form">
+      <div>
+        <label> Enter News Title: </label>
+        <input id="title" placeholder="Enter Title" type="text" required />
+      </div>
+
+      <div>
+        <label> Enter News Content: </label>
+        <input id="content" placeholder="Enter Content" type="text" required />
+      </div>
+
+      <button id="submit-button" type="submit">submit</button>
+    </form>
+
     <main>
       <section>
-        <div>
+        <div id="new-container">
           <h2 class="title">New Study Reveals Benefits of Exercise</h2>
-
           <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
           <span class="published-date">2024-03-17 08:00:00</span>
+          <hr />
         </div>
-        <hr />
       </section>
     </main>
   </body>
